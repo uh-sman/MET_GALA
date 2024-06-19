@@ -2,13 +2,13 @@
   "expo": {
     "name": "met_gala",
     "slug": "met_gala",
+    "scheme": "MET GALA",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "image": "./assets/icons/background-cover.png",
+      "resizeMode": "native",
       "backgroundColor": "#ffffff"
     },
     "ios": {
@@ -16,12 +16,21 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets/fonts/Amita.ttf"]
+        }
+      ]
+    ]
   }
 }
+
